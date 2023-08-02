@@ -1,3 +1,219 @@
-h1{
-    color: green;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+:root{
+    /* ==== COLORS ==== */
+    --first-color: #4D13D1;    
+    --color-dark: #202020;    
+    --color-paragraph-light: #505050;
+    --white: #fff;
+   
+    /* ==== TYPOGRAFY ==== */    
+	--font-body: 'Inter', sans-serif;; 
+
+    /* ==== WEIGHT ==== */    
+    --weight-regular: 400;
+    --weight-medium: 500;
+    --weight-semibold: 600;
+    --weight-bold: 700;
+    --weight-extra-bold: 700;
+
 }
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: var(--font-body);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+img{
+    width: 100%;
+}
+
+h1{
+  font-weight: var(--weight-bold);
+  margin-block-end: .25em;
+  font-size: 1.7em;
+}
+
+p{
+  font-size: .875em;
+  font-weight: var(--weight-medium);
+  color: var(--color-paragraph-light);  
+  line-height: 1.45;
+}
+
+ul{
+  list-style: none;
+}
+
+/* ====== GENERAL CLASS ====== */
+
+.flex-center{
+  display: flex;
+  justify-content: center; 
+}
+
+.container{
+  width: clamp(260px, 50% + 30vw, 600px);
+}
+
+.subtitle-question{
+  color: var(--first-color);
+  font-size: .95em;
+  margin-bottom: 8px;
+}
+
+/* ====== HEADER & NAV ====== */
+
+.header{
+
+  &__container{        
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    height: 45px;        
+  }
+
+  &__marca{
+    font-weight: 800;
+    color: var(--color-paragraph);
+    font-size:1.2em;
+  }   
+
+}
+
+.menu{
+  box-sizing: border-box;
+  position: fixed;
+  top: 5em;
+  left: -100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  
+  width: 100vw;
+  /* max-width: 270px;     */
+  height: 90vh;  
+
+  padding: 36px 24px 30px 24px;
+  
+  font-family: var(--font-subtitle);
+  font-weight: var(--font-bold);
+
+  font-size: 0.95em;
+  letter-spacing: 0em;
+  text-align: center;
+  transition: left 0.4s ease;
+
+  background-color: var(--color-dark);    
+  z-index: 5;
+   
+}
+
+.menu-label{
+  width: 24px;
+  height: 24px;
+  order: 0;
+}
+
+.menu-input{
+  display:none;
+}
+
+.menu-input:checked + .menu{
+  display: flex;  
+  left: 0;
+}
+
+
+/* ====== HERO ====== */
+
+.hero{
+
+  &__container{
+    display: flex;
+    flex-direction: column;
+    gap: .8em;
+
+    padding-bottom: 40px;
+  }
+
+  &__title{
+    width: 13ch;
+  }
+
+  &__verify{
+
+    display: grid;
+    gap: 10px;
+    margin-top: 12px;
+
+    & li{
+      display: grid;
+      grid-template-columns: 20px 1fr;
+      align-items: center;
+      gap: 8px;
+      color: var(--color-paragraph-light);
+      font-size: .85em;
+      font-weight:var(--weight-medium);
+      letter-spacing: .3px;
+
+    }
+
+  }
+
+}
+
+/* ====== WHY ====== */
+
+.why{
+  &__container{
+    padding: 75px 0;
+  }
+}
+
+/* ====== BUTTONS ====== */
+
+.section-buttons{
+  display: grid;
+  gap:0.2em;
+  margin-top: .9em;
+}
+
+.btn{
+  display: inline-block;
+  width: 100%;
+  padding: 1.05em 0;
+
+  text-align: center;
+  font-size: .9em; 
+  font-weight: var(--weight-semibold);
+  border-radius: 4px;
+}
+
+.btn-primary{  
+  color:var(--white);
+  background-color: var(--first-color);
+}
+
+.btn-secundary{
+  color: var(--first-color);
+  text-decoration: underline;
+  text-decoration-thickness: 2.5px; 
+  text-underline-offset: 3px;
+  font-weight: var(--weight-extra-bold);
+  font-size: .95em; 
+}
+
