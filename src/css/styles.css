@@ -1,4 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"); */
+
+@font-face {
+  font-family: inter;
+  src: url(../assets/fonts/Inter-VariableFont_slnt,wght.ttf);
+}
 
 :root{
     /* ==== COLORS ==== */
@@ -11,14 +16,11 @@
     --color-white: #fff;
    
     /* ==== TYPOGRAFY ==== */    
-	--font-body: 'Inter', sans-serif;; 
+	--font-body: "inter"; 
 
-    /* ==== WEIGHT ==== */    
-    --weight-regular: 400;
-    --weight-medium: 500;
-    --weight-semibold: 600;
-    --weight-bold: 700;
-    --weight-extra-bold: 700;
+    /* ==== WEIGHT ==== */      
+    --weight-medium: 500;    
+    --weight-bold: 700;    
 
 }
 
@@ -365,9 +367,9 @@ ul{
   }  
 
   &__link{    
-    font-size: .78em;
+    font-size: .8em;
     color:#5c5c5c;
-    font-weight: var(--weight-semibold);
+    font-weight: var(--weight-medium);
     transition: color .3s ease;
     &:hover{
       color: var(--first-color);
@@ -440,7 +442,7 @@ ul{
   text-decoration: underline;
   text-decoration-thickness: 2.5px; 
   text-underline-offset: 3px;
-  font-weight: var(--weight-extra-bold);
+  font-weight: var(--weight-bold);
   font-size: .95em; 
 
   &:hover{
