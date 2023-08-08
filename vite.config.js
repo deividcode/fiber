@@ -5,7 +5,7 @@ export default defineConfig({
   base: "https://deividcode.github.io/fiber/",  
   plugins: [
     legacy({
-      targets: ["> 1%"],
+      targets: ["defaults"]
     }),
   ],
 })
