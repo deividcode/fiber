@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: "inter";
   src: url(../assets/fonts/Inter-Medium.ttf);
@@ -144,9 +145,7 @@ ul{
     /* max-width: 270px;     */
     height: 90vh;  
   
-    padding: 42px 24px 30px 24px;
-    
-    font-family: var(--font-subtitle);
+    padding: 42px 24px 30px 24px;      
     font-weight: var(--font-bold);
   
     font-size: 0.95em;
