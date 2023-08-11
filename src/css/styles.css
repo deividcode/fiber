@@ -30,6 +30,7 @@
   --weight-medium: 500;    
   --weight-bold: 700;    
 
+  --animate-duration: 1.3s;
 }
 
 
@@ -99,9 +100,10 @@ ul{
 }
 
 .subtitle-question{
+  margin-bottom: 8px;
   color: var(--first-color);
   font-size: .95em;
-  margin-bottom: 8px;
+  font-weight: var(--weight-bold);
 }
 
 .paragraph--white{
@@ -252,6 +254,10 @@ ul{
   
   /* ====== WHY & CARD ====== */
   
+  .animate__bounce{
+    background-color: red;
+  }
+
   .why{
     &__container{
       padding: 75px 0;
@@ -267,7 +273,8 @@ ul{
   }
   
   .card{
-    max-width: 284px;
+    max-width: 284px;  
+    opacity: 0;
     &__header{
       display: grid;
       gap: 8.5px;
@@ -307,6 +314,7 @@ ul{
     }
   
     &__opinion{
+      opacity: 0;
       padding: 22px 20px;
       box-shadow: 0px 6px 11px -3px rgba(0,0,0,0.1);
       border: 1.92px #80808054 solid;
