@@ -10,22 +10,23 @@
   - [My process](#my-process)
     - [Built with](#built-with)
     - [What I learned](#what-i-learned)
+    - [What I learned](#what-i-learned-1)
+      - [HTML5](#html5)
+      - [CSS](#css)
+      - [JavaScript](#javascript)
   - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
 ### Screenshot
 
-![Design preview for the Loopstudios landing page coding challenge](./src/assets/images/fiber-preview.png)
-
 ![](./src/assets/images/fiber-preview.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/deividcode/fiber)
-- Live Site URL(GitHub Pages): [Add live site URL here](https://deividcode.github.io/fiber/)
+- Solution URL: [Github](https://github.com/deividcode/fiber)
+- Live Site URL: [Github Page](https://deividcode.github.io/fiber/)
 
 ## My process
 
@@ -44,17 +45,22 @@
 
 ### What I learned
 
-In the process of developing this website I learned some new things for me, first starting with HTML applying semantic tags improving the images.
+In the process of developing this website I learned some new things for me.
 
-To see how you can add code snippets, see below:
+### What I learned
+
+#### HTML5
 
 ```html
 <img src="/src/assets/images/hero-Illustration.png" alt="portfolio" width="530" height="528"> 
 <!-- Para un mejor Performance las propiedades width y height siempre deben estar presentes, con valores que abarquen el tamaño como estaran en nuestro sitio web -->
 
 <h1>,<h2>,<h3>,<h4>,<h5>,<h6> 
-Las etiquetas de titulo deben seguir una gerarquia empezando desde el H2
+<!-- Las etiquetas de titulo deben seguir una gerarquia empezando desde el H2 -->
 ```
+
+#### CSS
+
 ```css
 @font-face {
   font-family: "inter";
@@ -68,6 +74,9 @@ Las etiquetas de titulo deben seguir una gerarquia empezando desde el H2
 /* Podemos agregar una segunda opcion al crear nuestra variable de css, si por alguna razon no se cumple la primera esta variable tomara el segundo valor*/
 
 ```
+
+#### JavaScript
+
 ```js
 
 // Con la **API Intersection Observer** de Javascript, se puede conocer cuando un elemento esta dentro de la vista del usuario, se selecciona el elemento que se quiere observar y luego se pasa a la funcion
